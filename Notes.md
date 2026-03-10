@@ -43,8 +43,30 @@ Config management tool
 
 I’ll be deploying that via Terraform, and  using Ansible to actually configure your WordPress instance.
 
+Infrastructure Orchestration (Terraform’s main role):
+<br> Creates infrastructure resources
+<br> Handles dependencies
+<br> Builds cloud environments
 
+Examples:
+<br> Create a VPC
+<br> Launch a VM
+<br> Attach a load balancer
+<br> Create subnets
 
+Configuration Management:
+<br> Configures what happens inside a server
+<br> Installs software
+<br> Manages packages and services
+
+Examples:
+<br> Install Docker
+<br> Install Nginx
+<br> Create Linux users
+<br> Modify config files
+
+Summary
+<br> Infrastructure Orchestration creates the infrastructure and Configuration Management configures the inside of the server e.g. installs software and manages packages and services.
 
 
 
