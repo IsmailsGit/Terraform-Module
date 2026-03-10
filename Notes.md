@@ -27,7 +27,21 @@ In a production environment, that would often look like members in your team dep
 
 <img width="600" height="353" alt="image" src="https://github.com/user-attachments/assets/22554853-e428-49f6-a02a-98b4f35ff088" />
 
+A simple analogy 
+<br> Millions of Muslims annually attend a very important pilgrimage known as Hajj. 
+Now, what would that look like in terms of infrastructure orchestration?
+It would be arranging the essentials such as the transportation for the pilgrimage, hotels, the tents required, and this will be arranged in a very particular order. That would be the orchestration.
 
+What would the config management look like?
+<br> You'd have to consider each individual pilgrim and exactly what they need in order to perform the pilgrimage, such as the correct clothing, prayer mats, and any other utilities they might need, and that will fall over the config management of things.
+
+Within the DevOps space
+<br> Using  terraform as an orchestration tool that will be used in order to deploy your servers such as EC2 instances.
+
+Config management tool
+<br> You could use something like Ansible, for example, in which you'll be configuring your EC2 instances and these servers in order to run certain things such as hosting a WordPress server
+
+I’ll be deploying that via Terraform, and  using Ansible to actually configure your WordPress instance.
 
 
 
