@@ -68,5 +68,26 @@ Examples:
 Summary
 <br> Infrastructure Orchestration creates the infrastructure and Configuration Management configures the inside of the server e.g. installs software and manages packages and services.
 
+### What is Terraform
+<img width="651" height="347" alt="image" src="https://github.com/user-attachments/assets/cdb5dd0d-acf5-4fca-8953-2dcacd9eabfa" />
+
+You're a practitioner and you're deciding to deploy certain things using Terraform. That is your infrastructure as code tool.
+
+And then you've run a plan. Your plan is telling you exactly what your code is trying to do. So it will have things such as the resources you're trying to create. If this code is suggesting to deploy an EC2 instance, then your plan will tell you that it wants to create that.
+
+If you're happy with this plan and it correlates exactly with what you think your code is meant to do, you will then apply this. It will be a simple apply and it will run exactly what you need in order to then deploy your resources into the cloud
+
+This process involves the creation, the updating of these resources, and the versioning.
+
+### Tips for using Terraform
+
+1. Use the Terraform Documentation so the official hashicorp documentation for Terraform. And the Terraform registry
+
+2. Testing and Validation - it is important to know the implications of your code. In a production environment, you don't want to be breaking anything. You don't want to be deleting any important resources that are being used or anything live. So it's important to test and validate these things. This comes through thoroughly checking your Terraform plan and thoroughly making sure that it aligns with what you're trying to deploy.
+
+3. Start with a small MVP(Minimum Viable Product) and then iterate -  What that means in Terraform is configuring the resource that you need in order to deploy it into the cloud and then you could iterate. By iterating, we could focus on implementing maybe variables, maybe turning your code into a Terraform module. These are all things that you could iterate later on, but when undergoing your learning journey, it's important to establish an MVP and iterate accordingly.
+
+4. Implement DRY software engineering principle - DRY means do not repeat yourself. This is particularly important when it comes to Terraform. With Terraform, you have modules, things that can be used as templates. So often the best Terraform code will be the code that isn't constantly repeated. So utilizing things like modules and making your Terraform as DRY as possible is the ultimate goal in which you want to achieve.
+
 
 
