@@ -89,5 +89,36 @@ This process involves the creation, the updating of these resources, and the ver
 
 4. Implement DRY software engineering principle - DRY means do not repeat yourself. This is particularly important when it comes to Terraform. With Terraform, you have modules, things that can be used as templates. So often the best Terraform code will be the code that isn't constantly repeated. So utilizing things like modules and making your Terraform as DRY as possible is the ultimate goal in which you want to achieve.
 
+# Terraform State File 
+Terraform state file is actually a record of your existing infrastructure. It's an up-to-date record of your actual state.
+
+This is really important and it helps ensure idempotency.
+<br> Idempotency means your Terraform configuration, no matter how many times you run it, will produce the same result. It wouldn't deploy things multiple times and the result will be the same. And if you make a particular change to your configuration, it wouldn't cause a complete change, it will just apply that particular change. 
+
+
+Desired vs Current state
+
+<img width="595" height="343" alt="image" src="https://github.com/user-attachments/assets/a327b324-5d31-4fed-944d-ad1eec93403b" />
+
+
+Terraform state file is an up-to-date record of your infrastructure. So, that is your current state. For example, if you deployed two EC2 instances, all the details about those resources should be in your Terraform state file.
+
+Now, your desired state, this .tf, is actually your Terraform configuration of maybe changes you're trying to implement or things you're trying to deploy.
+
+What does the Terraform state file do? 
+It compares this to your actual infrastructure. And that's how Terraform is able to decide on what to do. 
+
+Desired state is what you're trying to achieve. Current state is what actually exists.
+
+
+
+
+
+
+
+
+
+
+
 
 
