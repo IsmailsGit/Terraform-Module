@@ -110,8 +110,46 @@ It compares this to your actual infrastructure. And that's how Terraform is able
 
 Desired state is what you're trying to achieve. Current state is what actually exists.
 
+## Deploying Infrastructure
+
+How is infrastructure deployed via terraform?
+How are the connections established for your deployments?
+How do I make sure I deploy things safely and not break anything?
+
+### Terraform Providers
+How are the connections established for your deployments?
+
+A terraform provider is a plugin that allows you to interact with cloud platforms, services or technologies, it's what enables terraform to manage your resources in the cloud.
+
+AWS example as a Provider
+
+<img width="511" height="323" alt="image" src="https://github.com/user-attachments/assets/ee032fce-f847-49b7-9605-fdf065a57fb9" />
+
+You have this Terraform block and you have this provider block. 
+
+The required providers tells you which provider is being used and what your terraform code depends on. In this code it's aws.
+
+The source tells you the source of the provider, it's often formatted as namespace then provider. The namespace is your official hashicorp it's reiterating that you're getting the AWS provider from the official HashiCorp registry.
+
+The version tells you the version of your provider
+
+You have the Provider which is the keyword it indicates what you're trying to configure via Terraform. And then you have the provider name, which is AWS. 
+This block is telling terraform that you're trying to configure the aws provider 
 
 
+### Terraform init
+
+<img width="612" height="308" alt="image" src="https://github.com/user-attachments/assets/86aa2cd1-f9a1-4eae-add2-3399de9bb9ad" />
+
+Terraform init is actually the first command you run in any new or existing Terraform project. Think of it as setting up your workspace.
+
+Terraform innit initializes the backend. 
+<br> What does that mean? 
+<br> The backend is where Terraform stores the state of your infrastructure. 
+
+This can be stored in a local file on your machine, or it can be stored remotely in a storage space like S3. So Terraform can now track your resources properly and allow that idempotency.
+
+Terraform init is also used to download your provider. Terraform looks at your configuration to identify which providers you need. And then it downloads these providers from the Terraform registry or other sources.
 
 
 
