@@ -190,6 +190,27 @@ After these changes are made, Terraform will update the state file to reflect th
 
 This is important because the state file is what Terraform tracks. It identifies what resources it manages and their configurations.
 
+### Terraform destroy
+
+Terraform destroy command is a way to destroy all remote objects managed by a particular terraform configuration.
+
+It is the opposite of a terraform apply, it's designed to destroy everything terraform has created 
+
+What happens during Terraform destroy
+It reads your configuration and state file. Terraform first reads your current configuration and state file to understand what resource it is managing.
+
+Then similarly to plan it actually generates a destruction plan. But this time, the plan details what resources to actually destroy rather than your Terraform plan that can detail what resources to create.
+
+Terraform will actually prompt you to confirm before proceeding with the destruction. This is an important feature. Same way that Terraform will prompt you when doing an apply, this is a safety measure to prevent you accidentally deleting things. 
+
+Once you confirm, Terraform sends the necessary commands to the cloud provider in order to destroy your resources. And then finally, Terraform updates the state file to reflect that the resources have been destroyed, ensuring that the state file remains accurate and up to date.
+
+
+
+
+
+
+
 
 
 
