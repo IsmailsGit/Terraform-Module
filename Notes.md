@@ -205,14 +205,24 @@ Terraform will actually prompt you to confirm before proceeding with the destruc
 
 Once you confirm, Terraform sends the necessary commands to the cloud provider in order to destroy your resources. And then finally, Terraform updates the state file to reflect that the resources have been destroyed, ensuring that the state file remains accurate and up to date.
 
+### Resource Block
+Configuring a Resource Block
 
+In Terraform, a resource block is used to define a piece of infrastructure that you want to manage. Whether it's a virtual machine, in this case, like an EC2 instance, or a database or networking components.
 
+The resource block is where you specify what you want to create, update, or delete about that resource. Each resource block corresponds to a specific resource type provided by the Terraform provider you're using, in this example it's aws
 
+<img width="689" height="359" alt="image" src="https://github.com/user-attachments/assets/6882613a-a6c4-4664-b717-ab6238eb133a" />
 
+Resource "aws_instance" "Test" - This line defines the resource type which is aws_instance and test is the name of your resource
 
+Attributes inside the Resource Block
 
+The ami attribute specifies the Amazon machine image, which is the template for your ec2 instance, determining the operating system.
 
+The instance_type is t2micro, this determines the hardware configuration of your instance, things like the CPU and memory 
 
+The tags attribute is a way to label and categorise your resources. It isn't compulsory but it's good practice for a production environment as you'd often want to know what sort of environment you're deploying your resources into.
 
 
 
