@@ -222,7 +222,16 @@ The ami attribute specifies the Amazon machine image, which is the template for 
 
 The instance_type is t2micro, this determines the hardware configuration of your instance, things like the CPU and memory 
 
-The tags attribute is a way to label and categorise your resources. It isn't compulsory but it's good practice for a production environment as you'd often want to know what sort of environment you're deploying your resources into.
+The tags attribute is a way to label and categorise your resources. It isn't compulsory but it's good practice for a production environment as you'd often want to know what sort of environment you're deploying your resources into, might be configured with things such as dev or prod or staging, depending on the environment that you're deploying your resource into.
+
+
+
+
+
+
+
+
+
 
 
 
