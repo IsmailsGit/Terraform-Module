@@ -151,9 +151,26 @@ This can be stored in a local file on your machine, or it can be stored remotely
 
 Terraform init is also used to download your provider. Terraform looks at your configuration to identify which providers you need. And then it downloads these providers from the Terraform registry or other sources.
 
+### Terraform plan
+Terraform plan allows you to see what your changes will do.
 
+Terraform analyzes your configuration files, compares them to the current state of your infrastructure, and then generates a plan to see what changes need to be made in order to achieve your desired state.
 
+The output of running "Terraform plan" represents our desired state
 
+Resource actions are indicated with the following symbols :
+<br> + create: Resources that will be created.
+<br> ~ update in-place: Resources that will be modified.
+<br> - destroy: Resources that will be deleted
+
+Example
+
+<img width="382" height="536" alt="image" src="https://github.com/user-attachments/assets/3fb2796a-4c88-4bd7-9c87-1f8dde20d9cc" />
+
+Terraform will perform the following actions:
+<br> • An EC2 instance (aws_instance.example) will be created.
+<br> • A security group (aws_security_group.example) will have some properties updated.
+<br> • An S3 bucket (aws_s3_bucket.example) will be destroyed.
 
 
 
