@@ -236,6 +236,9 @@ Import Block
 
 <img width="819" height="430" alt="image" src="https://github.com/user-attachments/assets/c5da6085-0ac4-4802-8290-d5b9db56f218" />
 
+Once you run a terrafrom plan you want to ensure that the resources you imported and the resource block that you've configured for it matches your current infrastructure.
+
+Your desired state should match your current state when you're importing a resource. So there should be a final confirmation of no changes to your infrastructure.
 
 
 
