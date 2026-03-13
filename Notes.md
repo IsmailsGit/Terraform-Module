@@ -224,6 +224,34 @@ The instance_type is t2micro, this determines the hardware configuration of your
 
 The tags attribute is a way to label and categorise your resources. It isn't compulsory but it's good practice for a production environment as you'd often want to know what sort of environment you're deploying your resources into, might be configured with things such as dev or prod or staging, depending on the environment that you're deploying your resource into.
 
+### Terraform Import
+Terraform import is a command that allows you to take existing resources into your cloud environment. This command is essential when you want to integrate Terraform into an existing infrastructure setup without needing to recreate anything from scratch.
+
+Why is this important?
+<br> You might join a company that already has resources deployed to the cloud manually, and you want to implement best practices and infrastructure as code.
+
+It'll be a pain having to delete all these resources and manually recreate them all from scratch. Terraform import is what allows you to bring those resources you created manually into your Terraform environment.
+
+Import Block
+
+<img width="819" height="430" alt="image" src="https://github.com/user-attachments/assets/c5da6085-0ac4-4802-8290-d5b9db56f218" />
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 
