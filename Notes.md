@@ -324,7 +324,20 @@ Best practises
 
 4. Secure sensitive outputs. You must be cautious when outputting sensitive information, especially things like passwords. Consider using Terraform's sensitive attribute to prevent these values from being displayed in your command line output. So always bear that in mind. What are you actually outputting? Is that a security risk? 
  
- 
+## Variable Hierarchy
+Get the image from vid 40
+
+We understand that variables in Terraform allow you to make your configuration more dynamic and reusable, and this is one of the ways in which it allows that through this variable hierarchy.
+
+Lowest priority, we have default values. If no other value is specified in any one of these other three options in the hierarchy, Terraform will use the default value, which is defined in the variable block.
+
+TFVAR files. Terraform looks for these TFVAR files, and it can be named terraform.tfvars or anything that ends in .tfvars. This file is specified using the dash var dash file flag. So typically, when you're running a Terraform apply, you'd use this dash var or dash file flag in order to define values for multiple variables in a single place. This is commonly applied when using modules
+
+TFVAR environment variables. This takes precedence over both TFVAR files and default values. Terraform can use environment variables to set the value of a variable, and this is prefixed with the tf underscore var. So for the variable like instance type, which we showed earlier as an example, if you were to export an environment variable, the command will look something like export tf_var_instance_type equals t2.micro. Then that will set precedence over whatever values in the tfvars file or whatever value is set in the default values
+
+The highest precedence goes to command line flags. This is simple; it's run using the dash var flag. I'm sure you're familiar with command line flags from doing the Linux course previously, but being able to leverage command line flags and simply adding a dash var instance type equals t2.micro along with your Terraform apply takes precedence over any of the other values that may be inputted in the rest of the hierarchy.
+
+
 
 
 
