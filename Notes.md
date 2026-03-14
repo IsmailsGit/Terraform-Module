@@ -297,9 +297,12 @@ Best practice is writing it in a separate variables.tf file.
 ### Input Variables
 Get image from video 36, can't paste images right now
 
-Local variables
 
+### Local variables
 
+ Local variables allow you to simplify your Terraform configurations by centralizing values that you use repeatedly, which makes your code easier to manage and understand.
+
+Local variables in Terraform are used to store those immediate values that you compute or assign once and then use multiple times throughout your configuration. Unlike input variables, which are meant to be provided by users, local variables are internal to the Terraform configuration. They help you reduce redundancy and keep your code dry.
 
 
 
