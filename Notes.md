@@ -299,14 +299,32 @@ Get image from video 36, can't paste images right now
 
 
 ### Local variables
+Get image from vid 39
 
- Local variables allow you to simplify your Terraform configurations by centralizing values that you use repeatedly, which makes your code easier to manage and understand.
+Local variables allow you to simplify your Terraform configurations by centralizing values that you use repeatedly, which makes your code easier to manage and understand.
 
 Local variables in Terraform are used to store those immediate values that you compute or assign once and then use multiple times throughout your configuration. Unlike input variables, which are meant to be provided by users, local variables are internal to the Terraform configuration. They help you reduce redundancy and keep your code dry.
 
 
+### Output Variable
+Get image from vid 39
 
 
+Output variables in Terraform are used to display values after your entire Terraform apply has run and been completed. These can be IDs, IP addresses, or other important information about your infrastructure
+
+Output variables are particularly useful for parsing information to other configurations, automation tools, or even just displaying them for your own reference.
+
+Best practises 
+
+1. You want to use descriptive names. So you want to choose meaningful names for your output variables so it's very clear.For example you can instance ID so you know that this value that you're getting represents your instance ID.
+
+2. You want to also document your outputs. So that means always include a description for your output variables. It makes it very clear and your Terraform configuration is easier to understand.
+
+3. You want to also use outputs for critical information. Output variables should be used to expose information that is critical for automation or manual intervention or chaining Terraform configurations together, which we haven't covered yet.
+
+4. Secure sensitive outputs. You must be cautious when outputting sensitive information, especially things like passwords. Consider using Terraform's sensitive attribute to prevent these values from being displayed in your command line output. So always bear that in mind. What are you actually outputting? Is that a security risk? 
+ 
+ 
 
 
 
