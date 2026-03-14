@@ -261,10 +261,23 @@ Remote Statefile characteristics
 
 3. Automatic backups and security. Remote backends can automatically back up your state file and apply encryption, ensuring that your infrastructure state is both secure and recoverable.
  
+## Terraform Workflow
+### Terraform init
+Terraform init is used to initialize a working directory containing your Terraform config files. This is the first command that should be run after writing a new Terraform configuration, and it downloads providers. Remember that it configures the backend for your Terraform state file.
 
-
-
-
+<br>        ⬇
+### Terraform validate
+It validates the Terraform configuration files in that respective directory to check if your code is well-formed, spotting those early syntax errors before you move on to other steps.
+<br>        ⬇
+ ### Terraform plan
+ It creates an execution plan. Terraform plan is comparing your current state to the desired state, which is your Terraform configuration files and what you want to achieve. And it tells you the necessary actions that need to occur in order to achieve your desired state.
+<br>        ⬇
+### Terraform Apply
+It's the execution that helps you achieve your desired state.
+Used to apply the changes required to reach the desired state of the configuration. So by default, apply scans the current directory for the configuration files and applies the changes appropriately. It also generates a plan and gives you that prompt back asking you, are you sure you want to apply these changes? 
+<br>        ⬇
+### Terraform Destroy
+Destroy is used to destroy the Terraform-managed infrastructure. And it will give you that same prompt back and ask for confirmation before destroying. it's a simple way to tear down your infrastructure without having to manually destroy all those resources.
 
 
 
