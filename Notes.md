@@ -295,6 +295,7 @@ Putting this stuff into variables will create that sort of reusable code and wil
 Best practice is writing it in a separate variables.tf file.
 
 ### Input Variables
+Get image from video 36, can't paste images right now
 
 
 
