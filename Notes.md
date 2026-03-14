@@ -240,12 +240,27 @@ Once you run a terrafrom plan you want to ensure that the resources you imported
 
 Your desired state should match your current state when you're importing a resource. So there should be a final confirmation of no changes to your infrastructure.
 
+## Local and Remote Statefiles
 
+### Local Statefiles
 
+Terraform stores your state file locally on your machine right in your project directory.
 
+Local Statefile characteristics
 
+1. It's easy to set up and there's no additional configuration required to store your state file locally.
+
+2. It's ideal for single-user projects, which is what we were previously working on when we deployed our EC2 instance. Local state files are best suited for environments where only one person is managing the infrastructure. It keeps everything contained and simple.
+
+### Remote Statefiles
+Remote Statefile characteristics
+
+1. By storing the state file remotely, multiple team members can access and update the same infrastructure state without risking conflicts or inconsistencies.
+
+2. Automatic locking, many remote backends like AWS S3, Terraform Cloud offer state locking. This helps prevent users from making changes at the same time, which reduces the risk of state corruption.
+
+3. Automatic backups and security. Remote backends can automatically back up your state file and apply encryption, ensuring that your infrastructure state is both secure and recoverable.
  
-
 
 
 
