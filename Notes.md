@@ -279,7 +279,22 @@ Used to apply the changes required to reach the desired state of the configurati
 ### Terraform Destroy
 Destroy is used to destroy the Terraform-managed infrastructure. And it will give you that same prompt back and ask for confirmation before destroying. it's a simple way to tear down your infrastructure without having to manually destroy all those resources.
 
+## Variables
+Variables allow you to write cleaner, more dynamic code, making it easier to manage different environments and setups.
 
+Why are variables used?
+
+Variables in Terraform are a way to parameterize your configuration, making them more dynamic and reusable. Instead of hard coding values like instance types, AMIs, or region names directly into your configuration files, you can define these values as variables
+
+This allows you to change them easily without modifying the core configuration.
+
+To use variables in Terraform, you'll first need to define them. Now, if you look back and remember the EC2 instance we created, there were things such as the instance type and AMI. It would be very convenient to be able to change them into variables and pass that in.
+
+Putting this stuff into variables will create that sort of reusable code and will make it more DRY(software engineering principle: Do Not Repeat Yourself).
+
+Best practice is writing it in a separate variables.tf file.
+
+### Input Variables
 
 
 
