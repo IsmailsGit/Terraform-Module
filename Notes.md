@@ -346,20 +346,28 @@ Primitive types are the simple individual values, while Complex types are a comb
 #### Primitive types 
 String - some text like "hello"
 
-Number - A numeric value, the number type can represent both whole numbers like 15 and fractional values, such as 6.28,
+<img width="223" height="91" alt="Image" src="https://github.com/user-attachments/assets/ab94722c-d58c-435f-b84e-05cdce3734f0" />
+
+Number - A numeric value, the number type can represent both whole numbers like 15 and fractional values, such as 6.28.
+
+<img width="225" height="117" alt="Image" src="https://github.com/user-attachments/assets/6616eed5-20d3-442c-a65a-1da8c8add674" />
 
 Bool - Either true or false, bool values can be used in conditional logic
+
+<img width="222" height="110" alt="Image" src="https://github.com/user-attachments/assets/a8116102-40ac-4bd2-b2af-346a84b669b0" />
 
 #### Complex types
 List - An ordered sequence of values, all of the same type
 
+<img width="216" height="87" alt="Image" src="https://github.com/user-attachments/assets/6178d0a0-38cb-4e03-817a-ddc4b1e32d75" />
+
 Map - A collection of key value pairs, it's like a cookbook index. It pairs ingredients with their amounts, allowing you to reference each item. Imagine you're pairing the ingredients alongside with their values. So you might have flour and the amount of flour that you need or eggs and the amount of eggs you need.
+
+<img width="190" height="120" alt="Image" src="https://github.com/user-attachments/assets/e8c5d1f0-f0a7-422b-bc45-4146bcb78b9b" />
 
 Object - A collection of attributes that can each have a different type, It can contain multiple values, including different types with specific attributes defined for each. It can contain multiple attributes. You have your object, it has string, number, bool. So it can contain all three primitive types within an object, which has a name, age, and a bool option for active.
 
-
-
-
+<img width="237" height="206" alt="Image" src="https://github.com/user-attachments/assets/09a625bf-4a89-4358-8c49-9c348a5b30ea" />
 
 
 
