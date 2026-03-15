@@ -337,8 +337,25 @@ TFVAR environment variables. This takes precedence over both TFVAR files and def
 
 The highest precedence goes to command line flags. This is simple; it's run using the dash var flag. I'm sure you're familiar with command line flags from doing the Linux course previously, but being able to leverage command line flags and simply adding a dash var instance type equals t2.micro along with your Terraform apply takes precedence over any of the other values that may be inputted in the rest of the hierarchy.
 
+### Types of Variables
+Get image from vid 41
+
+Primitive types are the simple individual values, while Complex types are a combination of values. Primitive types are like individual ingredients, flour, eggs, or sugar. They are simple and basic, and complex types, on the other hand, will be more full-on, full recipes.
 
 
+#### Primitive types 
+String - some text like "hello"
+
+Number - A numeric value, the number type can represent both whole numbers like 15 and fractional values, such as 6.28,
+
+Bool - Either true or false, bool values can be used in conditional logic
+
+#### Complex types
+List - An ordered sequence of values, all of the same type
+
+Map - A collection of key value pairs, it's like a cookbook index. It pairs ingredients with their amounts, allowing you to reference each item. Imagine you're pairing the ingredients alongside with their values. So you might have flour and the amount of flour that you need or eggs and the amount of eggs you need.
+
+Object - A collection of attributes that can each have a different type, It can contain multiple values, including different types with specific attributes defined for each. It can contain multiple attributes. You have your object, it has string, number, bool. So it can contain all three primitive types within an object, which has a name, age, and a bool option for active.
 
 
 
