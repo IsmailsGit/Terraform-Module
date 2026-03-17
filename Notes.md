@@ -1,4 +1,5 @@
 # Introduction to Terraform
+Terraform is an open-source infrastructure as code tool developed by HashiCorp. 
 
 Terraform is one of the most in-demand tools for DevOps engineers and it's often the backbone to a lot of infrastructure deployments, whether that is deploying things in AWS or deploying things in Microsoft Azure. Terraform is often the go-to tool for infrastructure as code.
 
@@ -36,7 +37,7 @@ What would the config management look like?
 <br> You'd have to consider each individual pilgrim and exactly what they need in order to perform the pilgrimage, such as the correct clothing, prayer mats, and any other utilities they might need, and that will fall over the config management of things.
 
 Within the DevOps space
-<br> Using  terraform as an orchestration tool that will be used in order to deploy your servers such as EC2 instances.
+<br> Using terraform as an orchestration tool that will be used in order to deploy your servers such as EC2 instances.
 
 Config management tool
 <br> You could use something like Ansible, for example, in which you'll be configuring your EC2 instances and these servers in order to run certain things such as hosting a WordPress server
@@ -399,6 +400,23 @@ A good Terraform module should be flexible, well-documented, and easy to use.
 By following these principles, your module will be reusable, maintainable, and scalable, just like a good, well-designed Lego block. 
 
 ## Terraform Interview Questions
+What is Terraform?
+
+Terraform is an open-source infrastructure as code tool developed by HashiCorp. 
+
+Infrastructure Orchestration creates infrastructure resources handles dependencies and builds cloud environments whereas Configuration Management configures what happens inside a server installs software manages packages and services.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
