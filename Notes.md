@@ -466,7 +466,7 @@ This is an opportunity to talk about things like modules to break down your infr
 
 Have you worked with remote state management? 
 
-Things like security should come to mind, sensitive data, remote backend for collaboration and mention what Terraform looks like in a production environment.
+In real world scenarios, things like security should come to mind, sensitive data, remote backend for collaboration and mention what Terraform looks like in a production environment.
 
 
 
