@@ -406,12 +406,19 @@ Terraform is an open-source infrastructure as code tool developed by HashiCorp.
 
 Infrastructure Orchestration creates infrastructure resources handles dependencies and builds cloud environments whereas Configuration Management configures what happens inside a server installs software manages packages and services.
 
+Terraform is a cloud-agnostic tool which means it can deploy to any cloud and different providers. It can also deploy kubernetes resources.
+
+It does this through the Terraform registry where it will install certain plugins, it will use certain API calls in order to be able to deploy to different providers.
 
 
+Also terraform is idempotent, idempotency means your terraform configuration, no matter how many times you run it, will produce the same result.
 
 
+What are the benefits of using Infrastructure as Code?
 
+Infrastructure as code provides automation, consistency, and repeatability in infrastructure management. It enables version control, reduces manual intervention, and allows for faster and safer deployments.
 
+What is the difference between Terraform apply and Terraform plan?
 
 
 
