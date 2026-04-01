@@ -476,6 +476,11 @@ The count feature lets you spin up multiple identical resources like virtual mac
 
 Now, it's a huge time saver when you need to replicate resources across different environments or scale up in a hurry.
 
+### For Each Loops
+<img width="269" height="384" alt="image" src="https://github.com/user-attachments/assets/52e52429-b855-4937-adb6-5a4af6f2d368" />
+
+<img width="354" height="222" alt="image" src="https://github.com/user-attachments/assets/a5b35f34-fe90-4332-acfb-fe6828cd0147" />
+
 
 
 
