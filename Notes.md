@@ -479,11 +479,24 @@ Now, it's a huge time saver when you need to replicate resources across differen
 ### For Each Loops
 <img width="269" height="384" alt="image" src="https://github.com/user-attachments/assets/52e52429-b855-4937-adb6-5a4af6f2d368" />
 
+A map = key → value pairs
+Keys are dev1, dev2 and dev3
+Values are objects that contain multiple attributes)
+
+
 <img width="354" height="222" alt="image" src="https://github.com/user-attachments/assets/a5b35f34-fe90-4332-acfb-fe6828cd0147" />
 
+The resource block creates 1 resource per map entry for example aws_instance.this["dev1" and aws_instance.this["dev2"]
 
+The each object is only available when using for_each
 
+each.key is the map key (dev1, dev2, dev3) and each.value is the map value (the object)
 
+each.value.<field> to access object properties e.g. instance_type = each.value.instance_type
 
+If you rename a key so dev1 to devA Terraform will destroy dev1 and creates devA
+Keys are the resource identity
+
+If you change the ami id for example ami_id = "new-ami" Terraform will destroy the old instance and create a new one
 
 
