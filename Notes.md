@@ -296,11 +296,13 @@ Putting this stuff into variables will create that sort of reusable code and wil
 Best practice is writing it in a separate variables.tf file.
 
 ### Input Variables
-Get image from video 36, can't paste images right now
+<img width="296" height="364" alt="image" src="https://github.com/user-attachments/assets/56862ec6-6b55-458f-83b5-3404e82b652a" />
+
 
 
 ### Local variables
-Get image from vid 39
+<img width="286" height="331" alt="image" src="https://github.com/user-attachments/assets/2aef8860-12c2-44db-a903-729389e3de2f" />
+
 
 Local variables allow you to simplify your Terraform configurations by centralizing values that you use repeatedly, which makes your code easier to manage and understand.
 
@@ -308,7 +310,9 @@ Local variables in Terraform are used to store those immediate values that you c
 
 
 ### Output Variable
-Get image from vid 39
+<img width="319" height="197" alt="image" src="https://github.com/user-attachments/assets/6d539210-8abd-48c9-834f-3901ba768249" />
+
+
 
 
 Output variables in Terraform are used to display values after your entire Terraform apply has run and been completed. These can be IDs, IP addresses, or other important information about your infrastructure
@@ -326,7 +330,8 @@ Best practises
 4. Secure sensitive outputs. You must be cautious when outputting sensitive information, especially things like passwords. Consider using Terraform's sensitive attribute to prevent these values from being displayed in your command line output. So always bear that in mind. What are you actually outputting? Is that a security risk? 
  
 ## Variable Hierarchy
-Get the image from vid 40
+<img width="416" height="271" alt="image" src="https://github.com/user-attachments/assets/c8612ba2-742c-438c-96da-182c822ee786" />
+
 
 We understand that variables in Terraform allow you to make your configuration more dynamic and reusable, and this is one of the ways in which it allows that through this variable hierarchy.
 
@@ -339,7 +344,6 @@ TFVAR environment variables. This takes precedence over both TFVAR files and def
 The highest precedence goes to command line flags. This is simple; it's run using the dash var flag. I'm sure you're familiar with command line flags from doing the Linux course previously, but being able to leverage command line flags and simply adding a dash var instance type equals t2.micro along with your Terraform apply takes precedence over any of the other values that may be inputted in the rest of the hierarchy.
 
 ### Types of Variables
-Get image from vid 41
 
 Primitive types are the simple individual values, while Complex types are a combination of values. Primitive types are like individual ingredients, flour, eggs, or sugar. They are simple and basic, and complex types, on the other hand, will be more full-on, full recipes.
 
