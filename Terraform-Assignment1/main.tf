@@ -1,7 +1,3 @@
-provider "aws" {
-    region = "eu-west-1"
-     # Configuration options
-      }
 
 resource "aws_instance" "web_server_wordpress"{
     ami              = var.instance_ami
