@@ -473,7 +473,7 @@ This is an opportunity to talk about things like modules to break down your infr
 In real world scenarios, things like security should come to mind, sensitive data, remote backend for collaboration and mention what Terraform looks like in a production environment.
 
 
-### Count Arguement 
+### Count Argument 
 <img width="265" height="76" alt="image" src="https://github.com/user-attachments/assets/5073d456-2636-4678-8338-9995a37d5477" />
 
 The count feature lets you spin up multiple identical resources like virtual machines or instances using just one resource block in your Terraform code. Instead of writing separate resources or definitions for each instance, you can simply say count = 2 or through any number and let Terraform handle the rest. 
