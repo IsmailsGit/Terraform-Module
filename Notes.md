@@ -404,7 +404,7 @@ A good Terraform module should be flexible, well-documented, and easy to use.
 By following these principles, your module will be reusable, maintainable, and scalable, just like a good, well-designed Lego block. 
 
 ## Terraform Interview Questions
-What is Terraform?
+### What is Terraform?
 
 Terraform is an open-source infrastructure as code tool developed by HashiCorp. 
 
@@ -418,11 +418,11 @@ It does this through the Terraform registry where it will install certain plugin
 Also terraform is idempotent, idempotency means your terraform configuration, no matter how many times you run it, will produce the same result.
 
 
-What are the benefits of using Infrastructure as Code?
+### What are the benefits of using Infrastructure as Code?
 
 Infrastructure as code provides automation, consistency, and repeatability in infrastructure management. It enables version control, reduces manual intervention, and allows for faster and safer deployments.
 
-What is the difference between Terraform apply and Terraform plan?
+### What is the difference between Terraform apply and Terraform plan?
 
 Basic Answer
 
@@ -434,41 +434,41 @@ Terraform plan makes that comparison between your desired state and your actual 
 
 Terraform apply where it actually applies the changes to your infrastructure and it's what executes the plan.
 
-What is a Terraform provider?
+### What is a Terraform provider?
 
 A provider is a plugin in Terraform that interacts with APIs of cloud platforms, SaaS providers, and other services to manage resources. For example, AWS. So you could essentially talk about how that provider allows that connection and communication between your Terraform configuration and to that hosted cloud platform.
 
 
-Explain the role of state in Terraform
+### Explain the role of state in Terraform
 
 Terraform keeps track of your infrastructure state via a state file. This file records all the resources that Terraform manages, allowing it to know what changes need to be applied when you run commands like apply or destroy. So essentially your state is your blueprint, taking notes of everything and keeping track of your infrastructure. Without your state file, you wouldn't be able to do the actions you need to do.
 
-What is the purpose of a backend in Terraform? 
+### What is the purpose of a backend in Terraform? 
 So a backend defines where and how the Terraform state is stored. Backends can be stored in state files locally or remotely, and they enable collaboration and versioning of state. It will be good to mention the use case for remote versus local state files.  Remote state files will be beneficial when collaborating with others, where you'd be using a remote backend like S3, and that allows for that Terraform collaboration. 
 
-What is the difference between Terraform import and Terraform init?
+### What is the difference between Terraform import and Terraform init?
 
 Terraform import brings the existing infrastructure that was not created by Terraform under Terraform's management. For example, you join a company that might be an early-stage startup where they've deployed things manually to the cloud and they haven't followed best practices. Instead of ripping everything down and deploying everything again, which can cause a lot of downtime, cost a lot of money, you could import existing resources into your Terraform configuration so you can now manage that within Terraform.
 
 Terraform init, that initializes the working directory containing your Terraform configuration files, downloads the required plugins, and also initializes any modules that you've configured.
 
-How do you manage sensitive data in Terraform?
+### How do you manage sensitive data in Terraform?
 
 A good way in order to manage sensitive data would be storing sensitive data in environment variables. Sensitive data like API keys, passwords, and credentials should always be handled very carefully and you don't want to be causing any risks. Another thing that you can do, and this will be taking your knowledge that step further, will be talking about utilizing your remote backend. If you're using something like AWS S3 to store your state file, you could mention another service that is used in AWS like secret management in order to store your secrets and sensitive data.
 
-What is the purpose of Terraform refresh?
+### What is the purpose of Terraform refresh?
 
 Terraform refresh command is very simple and it updates the state file to match the current real-world infrastructure. It queries the actual infrastructure to ensure Terraform state is in sync with the latest reality. This is important to keep your Terraform state file in line with your actual infrastructure. This will ensure that when you run your Terraform plan, that it will actually be going according to plan and not be deploying anything it shouldn't or deleting anything it shouldn't.
 
-Can you describe a challenging problem you encountered while using Terraform and how you solved this? 
+### Can you describe a challenging problem you encountered while using Terraform and how you solved this? 
 
 Interviewers can ask these sorts of questions to gain your problem-solving skills. You want to showcase this opportunity to talk about projects you worked on. An additional tip would be sharing your screen. Actually going through code that you've deployed, saying what problems and blockers you experienced and how you went about resolving it is super impressive to a lot of technical interviewers. It's an opportunity to showcase your skills and separate you from others and also explain code. Being able to explain code and digest it simply is again a massive advantage.
 
-How do you ensure your Terraform code is maintainable and scalable?
+### How do you ensure your Terraform code is maintainable and scalable?
 
 This is an opportunity to talk about things like modules to break down your infrastructure. Speak about modularity, how you want to make sure that modules are very specific, leveraging variable files for flexibility, maintaining documentation, using version control.
 
-Have you worked with remote state management? 
+### Have you worked with remote state management? 
 
 In real world scenarios, things like security should come to mind, sensitive data, remote backend for collaboration and mention what Terraform looks like in a production environment.
 
